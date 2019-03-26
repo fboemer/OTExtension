@@ -22,6 +22,8 @@ elseif(NOT ENCRYPTO_utils_FOUND AND NOT TARGET ENCRYPTO_utils::encrypto_utils)
 endif()
 find_package(Threads REQUIRED)
 
+find_package(Boost REQUIRED COMPONENTS thread)
+
 
 add_library(otextension
     ot/alsz-ot-ext-rec.cpp
